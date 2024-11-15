@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+@import url("timeline.css");
+*{ scroll-behavior: smooth}
+body{ background:#F7E9F5}
+a{ color: mediumpurple}
+a:hover{ color:#8392FD;
+text-decoration:none}
+.text-nhan
+{
+	 font-size: 72px;
+  background: -webkit-linear-gradient(pink, tomato);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.font-fancy
+{
+	font-family: "Mea Culpa", cursive;
+}
+.circle
+{
+	width: 100px;
+	height: 100px; 
+	background-color: rgba(131,146,253,0.3);border: 1px solid rgba(131,146,253,0.9);
+	position: absolute;
+	z-index: -1;
+	left: 1200px; top: 500px;
+	animation-name: didi ;
+	animation-duration: 5s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	border-radius: 20%;
+	filter: blur(2px)
+}
+
+@keyframes didi
+{
+	0% {
+		top: 500px;
+	transform: rotate(45deg) scale(0)
+	}
+	50% {
+		top: 200px;
+	left: 1200px;
+	transform: rotate(200deg) scale(1)
+	}
+	100% {
+		top: 10px;
+	left: 1000px;
+	transform: rotate(45deg) scale(1.5)}
+}
+@keyframes didi2
+{
+	0% {
+		top: 500px;
+	transform: rotate(45deg) scale(0);
+		background-color: rgba(217,18,223,.8)
+	}
+	50% {
+		top: 200px;
+	left: 1500px;
+	transform: rotate(360deg) scale(1);
+		background-color: rgba(57,18,223,.8)
+	}
+	100% {
+		top: 0px;
+	left: 1000px;
+	transform: rotate(-45deg) scale(0.5);
+		background-color: rgba(217,0,0,.8)
+	}
+}
+body {
+  
+    color: #9B9B9B; /* Màu chữ trắng để dễ đọc */
+}
+
+.position-relative {
+    position: relative;
+}
+
+.overlay-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 50%; /* Thay đổi kích thước theo nhu cầu */
+}
+
+.navbar {
+  background-color: #000 !important; 
+	position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+body {
+  padding-top: 65px; /* Đẩy phần nội dung xuống để không bị che bởi navbar */
+}
+
+.py-3 {
+  background-color: #333; /* Màu xám */
+  color: #fff; /* Chữ trắng */
+}
+
+.py-3 a {
+  color: #fff; /* Màu chữ trắng cho liên kết */
+}
+
+.py-3 p {
+  color: #fff; /* Màu chữ trắng cho đoạn văn */
+}
